@@ -78,6 +78,7 @@ public class Wand {
             Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
             // do nothing
+
         }
     }
 }
