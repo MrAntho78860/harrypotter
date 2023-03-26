@@ -60,11 +60,11 @@ public class Wand {
         while (true) {
             try {
                 int input = Integer.parseInt(scanner.nextLine().trim());
-                if (input >= 20 && input <= 40) {
+                if (input >= 20 && input <= 35) {
                     size = input;
                     break;
                 } else {
-                    System.out.println("Sorry, that's not a valid size. Please choose a size between 20 and 40 centimeters.");
+                    System.out.println("Sorry, that's not a valid size. Please choose a size between 20 and 35 centimeters.");
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Sorry, that's not a valid size. Please enter a number between 20 and 40.");
