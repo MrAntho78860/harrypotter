@@ -1,6 +1,6 @@
 package com.isep.hpah.core;
 
-import lombok.*;
+
 import java.util.Scanner;
 
 
@@ -32,16 +32,13 @@ public class Wand {
         while (true) {
             switch (input) {
                 case "drake's heart":
-                    core = Core.coeur_dragon;
+                    core = Core.heartstring_dragon;
                     break;
                 case "griffon's leaf":
-                    core = Core.plume_griffon;
+                    core = Core.hair_unicorn;
                     break;
                 case "phoenix's feather":
-                    core = Core.plume_phoenix;
-                    break;
-                case "drake's fruit":
-                    core = Core.fruit_dragon;
+                    core = Core.feather_phoenix;
                     break;
                 default:
                     System.out.println("Sorry, we don't have that core. Please choose from the available options.");
