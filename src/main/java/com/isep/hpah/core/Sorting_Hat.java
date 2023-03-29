@@ -6,7 +6,6 @@ public class Sorting_Hat {
     static String house;
     public static void ChooseHouse() {
         System.out.println("Here is the Sorting Hat which will decide which House you go to.");
-        Wait.wait(2000);
         Random rand = new Random();
         int chosenHouse = rand.nextInt(House.HOUSES.length);
         house = House.HOUSES[chosenHouse];
