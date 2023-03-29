@@ -38,15 +38,74 @@ public class Game {
             for (int i = 0; i < Pet.values().length; i++)
                 System.out.println("(" + (i + 1) + ")" + Pet.values()[i]);
             int input = readInt("->", 4);
-            if (input == 1)
+            promptEnterKey();
+            clearConsole();
+            if (input == 1) {
+
+                System.out.println("\t\t  , _ , ");
+                System.out.println("\t\t ( o o )");
+                System.out.println("\t\t/'` ' `'");
+                System.out.println("\t\t|'''''''|");
+                System.out.println("\t\t|\\\\'''//|");
+                System.out.println("\t\t   \"\"\"");
                 petSet = true;
-            else if (input == 2)
+            } else if (input == 2) {
+
+                System.out.println("               _     __,..---\"\"-._                 ';-,");
+                System.out.println("        ,    _/_),-\"`             '-.                `\\\\");
+                System.out.println("       \\|.-\"`    -_)                 '.                ||");
+                System.out.println("       /`       ,                      \\              .'/");
+                System.out.println("       '.___,__/                 .-'    \\_        _.-'.");
+                System.out.println("          |\\  \\      \\         /`        _`\"\"\"\"\"`_.-'");
+                System.out.println("             _/;--._, >        |   --.__/ `\"\"\"\"\"\"\"");
+                System.out.println("           (((-'  __//`'-......-;\\      )");
+                System.out.println("                (((-'       __//  '--. /");
+                System.out.println("                          (((-'    __//");
+
+
+
                 petSet = true;
-            else if (input == 3)
+             } else if (input == 3) {
+                System.out.println("\t\t   ,-\"\"\"\"\"\"-.");
+                System.out.println("\t\t     /\\j__/\t(  \\`--.");
+                System.out.println("\t\t     \\`@_@'/\t  _)  >--.`.");
+                System.out.println("\t\t    _{.:Y:_}_{{_,'\t    ) )");
+                System.out.println("\t\t   {_}`-^{_}\t ```\t (_/");
+
                 petSet = true;
-            else if (input == 4)
-                petSet = true;
-            else
+            } else if (input == 4){
+                System.out.println("\t                             .-----.\n"
+                        + "\t                            /7  .  (\n"
+                        + "\t                           /   .-.  \\\n"
+                        + "\t                          /   /   \\  \\\n"
+                        + "\t                         / `  )   (   )\n"
+                        + "\t                        / `   )   ).  \\\n"
+                        + "\t                      .'  _.   \\_/  . |\n"
+                        + "\t     .--.           .' _.' )`.        |\n"
+                        + "\t    (    `---...._.'   `---.'_)    ..  \\\n"
+                        + "\t     \\            `----....___    `. \\  |\n"
+                        + "\t      `.           _ ----- _   `._  )/)  |\n"
+                        + "\t        `.       /\"  \\   /\"  \\`.  `._   |\n"
+                        + "\t          `.    ((O)` ) ((O)` ) `.   `._\\\n"
+                        + "\t            `-- '`---'   `---' )  `.    `-. \n"
+                        + "\t               /                  ` \\      `-. \n"
+                        + "\t             .'                      `.       `.\n"
+                        + "\t            /                     `  ` `.       `-. \n"
+                        + "\t     .--.   \\ ===._____.======. `    `   `. .___.--`     .''''.\n"
+                        + "\t    ' .` `-. `.                )`. `   ` ` \\          .' . '  8)\n"
+                        + "\t   (8  .  ` `-.`.               ( .  ` `  .`\\      .'  '    ' /\n"
+                        + "\t    \\  `. `    `-.               ) ` .   ` ` \\  .'   ' .  '  /\n"
+                        + "\t     \\ ` `.  ` . \\.    .--.     |  ` ) `   .``/   '  // .  /\n"
+                        + "\t      `.  ``. .   \\ \\   .-- `.  (  ` /_   ` . / ' .  '/   .'\n"
+                        + "\t        `. ` \\  `  \\ \\  '-.   `-'  .'  `-.  `   .  .'/  .'\n"
+                        + "\t          \\ `.`.  ` \\ \\    ) /`._.`       `.  ` .  .'  /\n"
+                        + "\t           |  `.`. . \\ \\  (.'               `.   .'  .'\n"
+                        + "\t        __/  .. \\ \\ ` ) \\                     \\.' .. \\__\n"
+                        + "\t .-._.-'     '\"  ) .-'   `.                   (  '\"     `-._.--.\n"
+                        + "\t(_________.-====' / .' /\\_)`--..__________..-- `====-. _________)\n"
+                        + "\t                 (.'(.'");
+            petSet = true;
+        }else
                 System.out.println("Invalid input");
             pet = String.valueOf(Pet.values()[input - 1]);
             System.out.println("You have chosen " + pet + " as your pet. Please give him a name.");
@@ -143,7 +202,7 @@ public class Game {
         }
     }
 
-    private static void clearConsole() {
+    static void clearConsole() {
         for(int i = 0; i < 50; i++)
             System.out.println();
     }

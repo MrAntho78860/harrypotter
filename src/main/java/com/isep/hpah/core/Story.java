@@ -45,9 +45,27 @@ public class Story {
         System.out.println("                                                           HARRY POTTER AT HOME"
                 + "\n                                               " +
                 " A game created and designed by Anthony Amar");
-        System.out.println(" ");
-
         Game.promptEnterKey();
+        Game.clearConsole();
+        System.out.println("               _____");
+        System.out.println("              /     \\");
+        System.out.println("            /- (*) |*)\\");
+        System.out.println("            |/\\.  _>/\\|");
+        System.out.println("                \\__/    |\\");
+        System.out.println("               _| |_   \\-/");
+        System.out.println("              /|\\__|\\  //");
+        System.out.println("             |/|   |\\\\//");
+        System.out.println("             |||   | ~'");
+        System.out.println("             ||| __|");
+        System.out.println("             /_\\| ||");
+        System.out.println("             \\_/| ||");
+        System.out.println("               |7 |7");
+        System.out.println("               || ||");
+        System.out.println("               || ||");
+        System.out.println("               /\\ \\ \\");
+        System.out.println("              ^^^^ ^^^");
+
+
         Game.textDelay("Welcome to the enchanting world of Harry Potter!");
         Game.textDelay("As a young wizard, you've been granted a once-in-a-lifetime opportunity to attend Hogwarts School of Witchcraft and Wizardry.");
         Game.textDelay("This is where you'll unleash your true potential and discover the true power of magic.");
@@ -64,9 +82,40 @@ public class Story {
 
         System.out.println("May I have the pleasure of knowing your name?");
         Game.name();
+        Game.promptEnterKey();
+        Game.clearConsole();
+        System.out.println("\t\t           ,---.");
+        System.out.println("\t\t          /    |");
+        System.out.println("\t\t         /     |");
+        System.out.println("\t\t        /      |");
+        System.out.println("\t\t       /       |");
+        System.out.println("\t\t     ,'        |");
+        System.out.println("\t\t  ,-'          :");
+        System.out.println("\t\t `-.__..--'``-,_\\_");
+
         Sorting_Hat.ChooseHouse();
+
         Game.petinialise();
         System.out.println("Delighted to make your acquaintance! Please follow me, as we proceed to select your wand.");
+        Game.promptEnterKey();
+        Game.clearConsole();
+        System.out.println("                  .");
+        System.out.println("                   .");
+        System.out.println("         /^\\     .");
+        System.out.println("    /\\   \"V\"");
+        System.out.println("   /__\\   I      O  o");
+        System.out.println("  //..\\\\  I     .");
+        System.out.println("  \\].`[/  I");
+        System.out.println("  /l\\/j\\  (]    .  O");
+        System.out.println(" /. ~~ ,\\/I          .");
+        System.out.println(" \\\\L__j^\\/I       o   ");
+        System.out.println("  \\/--v}  I     o   .");
+        System.out.println("  |    |  I   _________");
+        System.out.println("  |    |  I c(`       ')o");
+        System.out.println("  |    l  I   \\.     ,/");
+        System.out.println("_/j  L l\\_!  _//^---^\\\\_ ");
+
+
         System.out.println("Welcome to the Wand Shop. We will choose your first wand here!");
         System.out.println("It is time to get you a wand.");
         System.out.println("Hmmm... Let us see which wand is best for you? Hmm...");
@@ -87,8 +136,34 @@ public class Story {
         Game.printHeading("Later that week");
         Spell expelliarmus = Spell.Expelliarmus;
 
+        System.out.println("\t\t                          ,---.");
+        System.out.println("\t\t                         /   |");
+        System.out.println("\t\t                        /    |");
+        System.out.println("\t\t                       /     |");
+        System.out.println("\t\t                      /      |");
+        System.out.println("\t\t                     /       |");
+        System.out.println("\t\t                ___,'        |");
+        System.out.println("\t\t              <  -'          :");
+        System.out.println("\t\t               `-.__..--'``-,_\\_");
+        System.out.println("\t\t                  |o/ ` :,.)_`>");
+        System.out.println("\t\t                  :/ `     ||/)");
+        System.out.println("\t\t                  (_.).__,-` |\\");
+        System.out.println("\t\t                  /( `.``   `| :");
+        System.out.println("\t\t                  \\'`-.)  `  ; ;");
+        System.out.println("\t\t                  | `       /-<");
+        System.out.println("\t\t                  |     `  /   `.");
+        System.out.println("\t\t  ,-_-..____     /|  `    :__..-'\\");
+        System.out.println("\t\t /,'-.__\\\\  ``-./ :`      ;       \\");
+        System.out.println("\t\t `\\ `\\  `\\\\  \\ :  (   `  /  ,   `. \\");
+        System.out.println("\t\t   `\\ `\\_  ))  :  ;     |  |      ): :");
+        System.out.println("\t\t   (`-.-'\\ ||  |\\ \\   ` ;  ;       | |");
+        System.out.println("\t\t    \\-_   `;;._   ( `  /  /_       | |");
+        System.out.println("\t\t     `-.-.// ,'`-._\\__/_,'         ; |");
+        System.out.println("\t\t        \\:: :     /     `     ,   /  |");
+        System.out.println("\t\t         || |    (        ,' /   /   |");
+        System.out.println("\t\t         ||                ,'   /    |");
 
-        Game.textDelay("You acquire your initial incantation, " +  expelliarmus+ " in the lecture hall.");
+        Game.textDelay("You acquire your initial incantation, " + expelliarmus + " in the lecture hall.");
         Game.textDelay("As you traverse the castle, you observe... ");
         //Game.randomEncounter();
         Game.textDelay("AMAZING! That was a close call! You are fortunate to be alive!");
