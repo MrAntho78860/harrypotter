@@ -3,9 +3,8 @@ package com.isep.hpah.core;
 import java.util.Random;
 
 
-
-public abstract class AbstractEnemy extends Character {
-    private int lifePoint;
+public class AbstractEnemy extends Character {
+    int lifePoint;
     private final int maxLifePoint;
     private final String name;
     private int accuracy;
@@ -14,8 +13,8 @@ public abstract class AbstractEnemy extends Character {
     private int efficiencyPotions;
     public static int enemy;
 
-    public AbstractEnemy(String name,int lifePoint, int maxLifePoint, int accuracy, int damage, int efficiencyPotions, int resistance) {
-        super(name, lifePoint, maxLifePoint,  accuracy, damage, efficiencyPotions, resistance);
+    public AbstractEnemy(String name, int lifePoint, int maxLifePoint, int accuracy, int damage, int resistance) {
+        super(name, lifePoint, maxLifePoint);
         this.lifePoint = lifePoint;
         this.maxLifePoint = maxLifePoint;
         this.name = name;
@@ -23,13 +22,14 @@ public abstract class AbstractEnemy extends Character {
         this.damage = damage;
         this.resistance = resistance;
     }
+
     public static void enemy() {
         Random random = new Random();
         //random number between 0 and length of encounters array
-        enemy = random.nextInt(GameLogic.enemyNames.length);
-        for (int i = enemy; i < GameLogic.enemyNames.length - 1; i++) {
-            GameLogic.enemyNames[i] = GameLogic.enemyNames[i + 1];
-            System.out.println("a " + GameLogic.enemyNames[enemy] + "!");
+        enemy = random.nextInt(Game.enemyNames.length);
+        for (int i = enemy; i < Game.enemyNames.length - 1; i++) {
+            Game.enemyNames[i] = Game.enemyNames[i + 1];
+            System.out.println("a " + Game.enemyNames[enemy] + "!");
         }
     }
 
@@ -76,13 +76,21 @@ public abstract class AbstractEnemy extends Character {
     //Enemy specific attack and defence calculations
     @Override
     public int attack() {
-        return damage;
+        if(Math.random()*100 +1 <= accuracy){
+            System.out.println(name +  " attacked you!");
+            return damage;
+        }else {
+            System.out.println("He misses");
+            return 0;
+        }
     }
+
     @Override
     public int defend() {
         return resistance;
     }
-
-
 }
+
+
+
 

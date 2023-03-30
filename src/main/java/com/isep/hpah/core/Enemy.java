@@ -14,13 +14,6 @@ public class Enemy extends Character {
     }
 
 
-    //@Override
-    public int attack() {
-        return 0;
-    }
-
-    //@Override
-    public int defend() {
-        return 0;
-    }
 }
+
+

@@ -1,14 +1,30 @@
 package com.isep.hpah.core;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+
 
 public class Story {
 
     static Wand wand;
     static Sorting_Hat sortingHat;
     static Wizard wizard;
+    static Spell spell;
+
+    public static void spider() {
+        System.out.println("              (");
+        System.out.println("               )");
+        System.out.println("              (");
+        System.out.println("        /\\  .-\"\"\"-.  /\\");
+        System.out.println("       //\\\\\\/  ,,,  \\\\/\\\\");
+        System.out.println("       |/\\| ,;;;;;, |/\\|");
+        System.out.println("       //\\\\\\\\;-\"\"\"-;///\\\\");
+        System.out.println("      //  \\\\/   .   \\\\/  \\\\");
+        System.out.println("     (| ,-_| \\ | / |_-, |)");
+        System.out.println("       //`__\\.-.-./__`\\\\");
+        System.out.println("      // /.-(() ())-.\\ \\\\");
+        System.out.println("     (\\ |)   '---'   (| /)");
+        System.out.println("      ` (|           |) `");
+        System.out.println("        \\)           (/");
+    }
 
     public static void printIntro() {
         //print title screen
@@ -82,6 +98,8 @@ public class Story {
 
         System.out.println("May I have the pleasure of knowing your name?");
         Game.name();
+        wizard = new Wizard(Game.name, 200, 200);
+
         Game.promptEnterKey();
         Game.clearConsole();
         System.out.println("\t\t           ,---.");
@@ -134,7 +152,7 @@ public class Story {
         Game.textDelay("You are advised to remain cautious and vigilant for any indication of danger.");
         Game.promptEnterKey();
         Game.printHeading("Later that week");
-        Spell expelliarmus = Spell.Expelliarmus;
+        Spell WingardiumLeviosa = new Spell(100, 10,"Wingardium Leviosa", 0 , "attack");
 
         System.out.println("\t\t                          ,---.");
         System.out.println("\t\t                         /   |");
@@ -163,11 +181,23 @@ public class Story {
         System.out.println("\t\t         || |    (        ,' /   /   |");
         System.out.println("\t\t         ||                ,'   /    |");
 
-        Game.textDelay("You acquire your initial incantation, " + expelliarmus + " in the lecture hall.");
+        Game.textDelay("You acquire your initial incantation, " + Spell.getName(WingardiumLeviosa) + " in the lecture hall.");
+        Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(WingardiumLeviosa)+ "  dmg        " + Spell.getAccuracy(WingardiumLeviosa)+ "  Acc        " + Spell.getResistance(WingardiumLeviosa)+ "  Res      " + Spell.getType(WingardiumLeviosa)+ "  Type" );
         Game.textDelay("As you traverse the castle, you observe... ");
-        //Game.randomEncounter();
+        Game.battle(new AbstractEnemy("Snake",40,40,60,10,0), wizard );
+        Game.printMenu();
+        Game.promptEnterKey();
         Game.textDelay("AMAZING! That was a close call! You are fortunate to be alive!");
         Game.printSeperator(1);
+
+
+        Game.battle(new AbstractEnemy("acromantula", 60,60 , 70, 20, 0), wizard );
+        Game.printMenu();
+        Game.promptEnterKey();
+        Game.battle(new AbstractEnemy("Troll", 100,100, 50 , 20 , 0), wizard );
+        Game.boss += 1;
+        Game.printMenu();
+        Game.promptEnterKey();
         //Game.textDelay("the deceased " + Game.enemyNames[AbstractEnemy.enemy] + " is lying on the ground in front of you.");
 
     }

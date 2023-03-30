@@ -8,8 +8,13 @@ public class Character {
     private int power;
     private int efficiencyPotions;
     private int resistance;
+    public int damage;
 
-    public Character(String name, int lifePoint, int maxLifePoint, int accuracy, int damage, int efficiencyPotions, int resistance) {
+    public Character(String name, int lifePoint, int maxLifePoint) {
+        this.setLifePoint(lifePoint);
+        this.setMaxlifePoint(maxLifePoint);
+        this.setName(name);
+
     }
 
 
