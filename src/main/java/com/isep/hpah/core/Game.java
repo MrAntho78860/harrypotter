@@ -200,8 +200,8 @@ public class Game {
         System.out.println("Pet: " + pet);
         System.out.println("Wand core: " + Wand.core + "     size: " + Wand.getSize() + " cm");
         System.out.println("Enemies killed : " + enemycount);;
-        //System.out.println("Known-spells: " + wizard.getSpells().toString());
-        //System.out.println("potions: " + wizard.getPotions().toString());
+        System.out.println("Known-spells: " + wizard.getSpells().toString());
+        System.out.println("potions: " + wizard.getPotions().toString());
         System.out.println(" ");
         promptEnterKey();
         returnmenu = true;
@@ -277,7 +277,7 @@ public class Game {
             if (input == 1){
                 System.out.println();
                 //Fight
-                //calcultaing the damage and damage reduction
+                //calculating the damage and damage reduction
                 int dmg = wizard.attack() - enemy.defend();
                 int dmgTook = enemy.attack() - wizard.defend();
                 //check if the damage is negative

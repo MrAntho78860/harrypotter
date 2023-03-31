@@ -10,12 +10,6 @@ public class Spell extends AbstractSpell{
 
 
 
-    public static Spell Expelliarmus = new Spell(80, 20,"Expelliarmus", 0 , "turnskip");
-    public static Spell Protego = new Spell(100, 0,"Protego", 50 , "defense");
-    public static Spell Stupefy = new Spell(60, 30,"Stupefy", 0 , "attack");
-    public static Spell Sectumsempra = new Spell(40, 40,"Sectumsempra", 0 , "attack");
-
-
 
     public Spell(int accuracy, int damage, String name, int resistance, String type) {
         super(accuracy, damage, name, resistance, type);
@@ -54,6 +48,8 @@ public class Spell extends AbstractSpell{
 
         return Spell.type;
     }
+
+
 
 
 

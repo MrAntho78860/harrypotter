@@ -146,11 +146,12 @@ public class Story {
     }
 
     public static void printFirstActIntro() {
-        Game.textDelay("You are now presented with the " + Sorting_Hat.getHouse() + " communal area and living quarters.");
-        Game.textDelay("The elder students are already present, and they are all discussing the recent surge in assaults by mystical creatures.");
-        Game.textDelay("These attacks can occur anytime and anyplace.");
-        Game.textDelay("You are advised to remain cautious and vigilant for any indication of danger.");
+        Game.textDelay("Welcome to the communal area and living quarters of the " + Sorting_Hat.getHouse() + " house.");
+        Game.textDelay("The senior students are already here, discussing the recent increase in attacks by mystical creatures.");
+        Game.textDelay("These attacks can happen at any time and anywhere.");
+        Game.textDelay("It is advisable to be cautious and vigilant for any signs of danger.");
         Game.promptEnterKey();
+
         Game.printHeading("Later that week");
         Spell WingardiumLeviosa = new Spell(100, 10,"Wingardium Leviosa", 0 , "attack");
 
@@ -194,7 +195,7 @@ public class Story {
         Game.battle(new AbstractEnemy("acromantula", 60,60 , 70, 20, 0), wizard );
         Game.printMenu();
         Game.promptEnterKey();
-        Game.battle(new AbstractEnemy("Troll", 100,100, 50 , 20 , 0), wizard );
+        Game.battle(new AbstractEnemy("Troll", 5,5, 50 , 0 , 0), wizard );
         Game.boss += 1;
         Game.printMenu();
         Game.promptEnterKey();

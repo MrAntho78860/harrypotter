@@ -81,3 +81,174 @@
           System.out.println("         `b                                                  d8b..d\"\"");
           System.out.println("          `b                                              ,dP'         ");
           System.out.println("           `7.
+
+
+
+
+// Intro Boss 1 Troll
+System.out.println("As you emerge victorious from your battle against the fearsome 'Snake' and the deadly 'Acromantula', your quest leads you deeper into the dark and foreboding dungeons.")
+System.out.println("Suddenly, you hear a loud thud echoing from the end of the corridor, and you instinctively take cover behind a nearby pillar.")
+System.out.println("As you pick around the corner, you catch a glimpse of the massive 'Troll' lumbering towards you. You steel yourself for the fight of your life as you enter the 'Dungeon Bathrooms'.")
+System.out.println("Ready to face the Level 1 Boss and prove your worth as a true hero.")
+
+//Troll's Battle
+"With your wand at the ready, you begin to cast 'Wingardium Leviosa',"
+"lifting nearby objects into the air and directing them towards the Troll's head."
+
+//Victory against the Troll
+System.out.println("After a grueling battle, you emerge victorious over the mighty 'Troll', its massive form lying motionless on the cold stone floor of the 'Dungeon Bathrooms'.")
+System.out.println("As you catch your breath and take in your surroundings, you notice a small glimmer in the corner of the room. You cautiously approach and discover a treasure chest, its contents glinting in the dim light.")
+System.out.println("With a sense of satisfaction, you open the chest and claim your reward for defeating the Level 1 Boss.")
+System.out.println("You know that your journey has only just begun, but with your skill and bravery tested and proven, you are ready to face whatever challenges lie ahead.")
+
+"You defeated the Troll"
+"You found [7-15] coins"
+
+
+
+
+
+// Intro Boss 2 Basilisk
+"You cautiously make your way through the dark and musty corridors of Hogwarts, your heart racing with anticipation and fear.
+Your quest has led you to the infamous 'Chamber of Secrets', where an ancient and deadly creature lies in wait.
+You can hear the sound of its slithering body moving through the shadows, and you grip your wand tightly, preparing for the fight of your life.
+As you enter the chamber, you catch a glimpse of the creature's glowing eyes and razor-sharp fangs, and you know that this will be a battle like no other.
+With your courage and magic as your only weapons, you step forward to face the fearsome 'Basilisk', determined to emerge victorious and save the school from its deadly grasp."
+
+// Gryffindor fight against Basilisk if the player demand to use the Sword
+"The Gryffindor wizard reached for the Sword of Gryffindor, which had appeared at his feet.
+With a fierce determination, he raised the sword high above his head and delivered a swift blow to the deadly 'Basilisk', vanquishing the creature once and for all."
+
+// Other House fight against Basilisk and Victory
+As you stand face to face with the menacing 'Basilisk', you focus your mind and call forth the power of the 'Accio' spell.
+With a swift wave of your wand, you seize one of the creature's deadly fangs and plunge it deep into the cursed 'Tom Riddle's Diary', destroying the dark magic within.
+Your victory is hard-won, but you stand tall and proud as the echoes of the battle fade into the distance. Well done, Wizard !
+
+//Basilisk win
+You attempt to cast the 'NameSpell' spell, but something goes awry.
+Your wand slips from your grasp and the 'Basilisk' turns its deadly gaze upon you.
+In a moment of terror, you feel your body freeze and turn to stone.
+Your quest has come to a sudden and unfortunate end.
+
+
+
+
+
+//Intro Boss 3 Dementors
+You now face the formidable 'Dementors', ready to engage in battle within the murky waters of the Forbidden Forest lake.
+The fight is about to begin.
+
+//Win against
+You unleash the power of 'Expecto Patronum', casting a powerful charm that sends the 'Dementors' fleeing in terror.
+The battle is won, and you stand victorious in the face of darkness.
+
+//Defeat against Dementors
+You attempt to cast 'SpellName', but the power of the 'Dementors' overwhelms you, and you are unable to repel their darkness.
+Your soul is consumed, and you are left stranded in the abyss of your worst memories.
+Your quest has come to a devastating end.
+
+
+
+
+
+//Intro Boss 4 Voldemort & Peter Pettigrew
+You find yourself in the eerie graveyard of Little Hangleton,
+facing the ultimate challenge: the infamous Dark Lord Voldemort and his loyal follower, Peter Pettigrew.
+ Your battle begins.
+
+//Win against them with the Accio Spell
+With all your might, you cast the Accio spell to draw the Portkey closer to you.
+Voldemort and Pettigrew are closing in, but you manage to grab the Portkey and escape just in time.
+Victory is yours, but the memory of this battle will haunt you forever.
+
+//Win but without Accio Spell
+With a quick incantation, you manage to stun Voldemort and Pettigrew, giving you just enough time to escape.
+You run as fast as you can, grateful for the chance to fight another day.
+
+//Defeat against them
+You fought bravely, but unfortunately, Voldemort and Pettigrew were too powerful.
+They overcame your spells and defeated you in battle.
+As you lay defeated, you wonder if there will ever be another chance to stop their reign of terror.
+
+
+
+
+
+//Intro Boss 5 Dolores Umbridge
+You enter the Examination Room at Hogwarts to face your final challenge against the tyrannical Dolores Umbridge.
+The tension is palpable as the battle is about to begin.
+
+//Victory
+With a burst of spells, Dolores Umbridge was defeated.
+The wizard used every trick in their arsenal, from stunning spells to disarming charms, until Umbridge was left disarmed and disoriented.
+The students in the room erupted in cheers, and the wizard cast a few more spells to set off fireworks, lighting up the room with a colorful celebration.
+
+//defeat
+"Despite your attempts to fight Dolores Umbridge, she overpowers you and emerges victorious.
+You feel defeated and helpless as she stands over you."
+
+
+
+
+
+//Intro Boss 6 DeathEater
+As you climb the winding stairs of the Astronomy Tower, you hear the faint echoes of laughter and whispers growing louder with each step.
+At the top, you find yourself face to face with a group of menacing Death Eaters, their wands at the ready.
+The battle begins.
+
+//Join the DeathEater
+As a proud member of Slytherin, you decide to team up with the Death Eaters.
+Together, you fight valiantly and emerge victorious, securing your place among the elite wizards.
+GAME FINISH VICTORY
+
+//Sectumsempra
+ You bravely use the powerful Sectumsempra spell, causing deep wounds to your enemies.
+ With quick reflexes and strategic thinking, you defeat the Death Eaters and progress to the final level.
+
+ //Victory with spells
+ Using your arsenal of spells and skills, you engage in an intense battle with the Death Eaters in the Astronomy Tower.
+ Your tenacity and determination pay off as you emerge victorious, earning your place among the elite wizards in the final level.
+
+
+
+
+
+
+
+ //Intro Boss 7 Voldemort et Bellatrix Lestrange
+ The final battle against the ultimate evil has arrived.
+ The fate of the wizarding world rests on your shoulders as you stand face to face with the Dark Lord himself, Voldemort, and his most loyal follower, Bellatrix Lestrange.
+ The tension is palpable as you draw your wand and prepare to give it your all.
+ It's time to show them what a true wizard is made of.
+ Are you ready to face your destiny and save the wizarding world once and for all ?
+
+
+
+ //Wizard Victory
+
+The wizard, armed with courage and determination, is about to face the two most formidable foes of the wizarding world.
+They must act with caution and speed, for the slightest mistake can be fatal.
+Spells come from all sides, but the wizard avoids them with ease.
+They respond with a series of well-placed spells that incapacitate Bellatrix Lestrange and Voldemort.
+The sorcerer managed to avoid the Avada Kedavra and defeat Hogwarts' two greatest enemies.
+
+
+//Wizard Defeat
+The wizard fought valiantly against Voldemort and Bellatrix Lestrange, but unfortunately, he was not able to defeat them.
+Despite his best efforts, he was unable to avoid the Avada Kedavra and perished in battle.
+The wizarding world mourned his loss, and Hogwarts would never forget his bravery in the face of evil.
+Although he did not succeed in his mission, his name would forever be etched in the history of the wizarding world as a hero who fought until his last breath.
+
+
+
+
+
+//End
+As the wizard stands victorious over the defeated forms of Bellatrix Lestrange and Voldemort, he feels a surge of triumph and relief.
+He had faced his greatest challenge and emerged victorious, thanks to his courage, quick reflexes, and mastery of spells.
+The wizard's name will forever be remembered as the hero who saved the wizarding world from the darkness of the Dark Lord.
+
+As he walks out of the ruins of Hogwarts, the wizard is greeted by cheers and applause from his fellow students and teachers.
+He is hailed as a champion, a savior, and a true wizard in every sense of the word.
+The wizard knows that his journey is far from over, but for now, he revels in the glory of his triumph and the knowledge that he has brought hope and light to a world once shrouded in darkness.
+

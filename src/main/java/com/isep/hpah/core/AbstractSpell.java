@@ -1,12 +1,17 @@
 package com.isep.hpah.core;
 
 public class AbstractSpell {
-    private int damage;
-    static String name;
-    private int accuracy;
+    public static int damage;
+    public static int resistance;
+    public static int accuracy;
+    public static String name;
+    public static String type;
+    public static int input;
+    static String[] spells = {};
+    static Spell spell;
+  //  static ForbiddenSpell forbiddenSpell;
+    static House houses;
 
-    private int resistance;
-    private String type;
     public AbstractSpell(int accuracy, int damage, String name, int resistance, String type) {
         this.setAccuracy(accuracy);
         this.damage = damage;
@@ -28,12 +33,40 @@ public class AbstractSpell {
     }
 
     public void setResistance(int resistance) {
-        this.resistance= resistance;
+        this.resistance = resistance;
+    }
+    public AbstractSpell(String name, int damage, int accuracy, int resistance, String type) {
+        AbstractSpell.name = name;
+        AbstractSpell.damage = damage + (damage*houses.damageboost)/100;
+        AbstractSpell.accuracy = accuracy + (accuracy*houses.accuracyboost)/100;
+        AbstractSpell.resistance = resistance + (resistance*houses.resistanceboost)/100;
+        AbstractSpell.type = type;
     }
 
+    public static void castSpell() {
+        Game.clearConsole();
+        Game.printHeading("Which spell would you like to cast?");
+        for (int i = 0; i < spells.length; i++)
+            System.out.println("(" + (i + 1) + ") " + spells[i]);
+        input = Game.readInt("->", spells.length);
+        //ForbiddenSpell forbiddenSpell;
+        if (spells[input - 1] == "Wingardium Leviosa") {
+            spell = new Spell(100, damage = 10, "WingardiumLeviosa", resistance = 0, type = "attack");
+        } else if (spells[input - 1] == "Accio") {
+            spell = new Spell(100, 10, "Accio", 0, "attack");
+        } else if (spells[input - 1] == "Expecto Patronum") {
+            spell = new Spell(100, damage = 10, "Expecto Patronum", resistance = 10, type = "defense");
+        } else if (spells[input - 1] == "Stupefy") {
+            spell = new Spell(100, damage = 30, "Stupefy", resistance = 0, type = "attack");
+        } else if (spells[input - 1] == "Sectumsempra") {
+            spell = new Spell(100, damage = 40, "Sectumsempra", resistance = 0, type = "attack");
+         } else if (spells[input - 1] =="Expelliarmus") {
+            spell = new Spell(100, damage = 40, "Expelliarmus", resistance = 0, type = "attack");
+        } else if (spells[input - 1] =="Avada Kedavra") {
+            spell = new Spell(100, damage = 40, "Avada Kedavra", resistance = 0, type = "attack");
 
-
+    }
 
 }
-
+}
 
