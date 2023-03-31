@@ -11,80 +11,63 @@ public class Potion {
     private int accuracy;
     private int damage;
     private int resistance;
-    private int price;
     private String type;
     static String[] potions = {};
 
-    public void PotionOfLife() {
-        this.name = "Potion of Life";
-        this.lifePoint = 50;
-        this.accuracy = 0;
-        this.damage = 0;
-        this.resistance = 0;
-        this.price = 50;
-        this.type = "heal";
+
+    static Potion potion;
+
+    public Potion(String name, int accuracy, int damage,  int resistance, int lifePoint) {
+        this.accuracy = accuracy;
+        this.damage = damage;
+        this.name = name;
+        this.resistance = resistance;
+        this.lifePoint = Wizard.lifePoint;
     }
 
-    public void PotionOfAccuracy() {
-        this.name = "Potion of Accuracy";
-        this.lifePoint = 0;
-        this.accuracy = 50;
-        this.damage = 0;
-        this.resistance = 0;
-        this.price = 50;
-        this.type = "buff";
+    public static void UsePotion() {
+        Game.clearConsole();
+        Game.printHeading("Which potion would you like to cast?");
+        for (int i = 0; i < potions.length; i++)
+            System.out.println("(" + (i + 1) + ") " + potions[i]);
+        int input = Game.readInt("->", potions.length);
+        //Forbiddenpotion forbiddenpotion;
+        if (potions[input - 1] == "Potion of heal") {
+            potion = new Potion("Potion of heal", 0, 0, 0, 40);
+        } else if (potions[input - 1] == "Potion of accuracy") {
+            potion = new Potion("Potion of accuracy", 10, 0, 0, 0);
+        } else if (potions[input - 1] == "Potion of damage") {
+            potion = new Potion("Potion of damage", 0, 10 , 0, 0 );
+        } else if (potions[input - 1] == "Potion of resistance") {
+            potion = new Potion("Potion of resistance", 0, 0, 10, 0);
+        }else if (potions[input - 1] == "Super Potion") {
+                potion = new Potion("Super Potion", 10, 10,   10, 10);
+
+        }
+
+
     }
 
-    public void PotionOfPower() {
-        this.name = "Potion of Power";
-        this.lifePoint = 0;
-        this.accuracy = 0;
-        this.damage = 50;
-        this.resistance = 0;
-        this.price = 50;
-        this.type = "buff";
-    }
+    public static void rndPotion(){
+        int rnd = (int) (Math.random()*21);
+        if (rnd <= 5)
+            potions("Potion of heal");
+        if (5 < rnd && rnd <= 10)
+            potions("Potion of accuracy");
+        if (10 < rnd && rnd <= 15)
+            potions("Potion of damage");
+        if (15 < rnd && rnd <= 20)
+            potions("Potion of resistance");
+        if (rnd == 21)
+            potions("Super Potion");
 
-    public void PotionOfResistance() {
-        this.name = "Potion of Resistance";
-        this.lifePoint = 0;
-        this.accuracy = 0;
-        this.damage = 0;
-        this.resistance = 50;
-        this.price = 50;
-        this.type = "buff";
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getLifePoint() {
-        return lifePoint;
-    }
-
-    public int getAccuracy() {
-        return accuracy;
-    }
-
-    public int getDamage() {
-        return damage;
-    }
-
-    public int getResistance() {
-        return resistance;
-    }
-
-    public String getType() {
-        return type;
-    }
-    public static void potions(){
-        System.out.println("You have learnt a new potion:");
+    public static void potions(String name){
+        System.out.println("You have obtained a " + name);
         ArrayList<String> arrlistObj =
                 new ArrayList<String>(Arrays.asList(name));
-
         // Add new element to the ArrayList
-        arrlistObj.add("Polyjuice Potion");
+        arrlistObj.add(name);
         // Convert the ArrayList to Array
         potions = arrlistObj.toArray(new String[]{name});
     }

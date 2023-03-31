@@ -195,13 +195,13 @@ public class Game {
         boolean returnmenu;
         clearConsole();
         printHeading("Character Info");
-        System.out.println("Name: " + name);
-        System.out.println("House: " + Sorting_Hat.getHouse());
-        System.out.println("Pet: " + pet);
-        System.out.println("Wand core: " + Wand.core + "     size: " + Wand.getSize() + " cm");
+        System.out.println("Name : " + name);
+        System.out.println("House : " + Sorting_Hat.getHouse());
+        System.out.println("Pet : " + pet);
+        System.out.println("Wand type : " + Wand.core + "     Size : " + Wand.getSize() + " cm");
         System.out.println("Enemies killed : " + enemycount);;
-        System.out.println("Known-spells: " + wizard.getSpells().toString());
-        System.out.println("potions: " + wizard.getPotions().toString());
+        System.out.println("Known-spells : " + Arrays.toString(AbstractSpell.spells));
+        System.out.println("Potions : " + Arrays.toString(Potion.potions));
         System.out.println(" ");
         promptEnterKey();
         returnmenu = true;
@@ -213,6 +213,11 @@ public class Game {
 
     static void clearConsole() {
         for (int i = 0; i < 50; i++)
+            System.out.println();
+    }
+
+    static void skiplines() {
+        for (int i = 0; i < 10; i++)
             System.out.println();
     }
 
@@ -254,7 +259,7 @@ public class Game {
 
 //Enemies name
 
-    public static String[] enemyNames = {"Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort", "Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort"};
+    public static String[] enemyNames = {"Dementor", "Basilisk", "Death Eater", "Voldemort", "Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort", "Cerberus", "Werewolf",};
 
 
 
@@ -265,8 +270,8 @@ public class Game {
         while(true){
 
             clearConsole();
-            Story.spider();
             printHeading("Place : " + places[boss] +" | "+" Enemy Kills : " + enemycount  );
+            Drawings.Battledraw(enemy);
             printHeading(enemy.getName() + " HP: " + enemy.getLifePoint() + "/" + enemy.getMaxlifePoint());
             printHeading( name + " HP: " + wizard.lifePoint+ "/" + wizard.maxLifePoint);
             System.out.println("Choose an action: ");
@@ -294,6 +299,7 @@ public class Game {
                 enemy.lifePoint -= dmg;
                 //print the info of this battle round
                 clearConsole();
+                Drawings.Battledraw(enemy);
                 printHeading("You used " + Spell.getName(Story.spell) + "!"
                         + "\n You attacked " + enemy.getName() + " for " + dmg + " damage!");
                 printHeading(enemy.getName() + " attacked you for " + dmgTook + " damage!");
@@ -330,7 +336,8 @@ public class Game {
             }else if(input == 2) {
                 //use potion
                 clearConsole();
-                if (wizard.pots > 0 && wizard.lifePoint < wizard.maxLifePoint) {
+
+                if (wizard.pots > 0) {
                     //use potion
                     wizard.pots--;
                     wizard.lifePoint += 10;
@@ -344,11 +351,15 @@ public class Game {
                             promptEnterKey();
                         } else {
                             //no potions
-                            printHeading("You don't have any potions or you are full hp!");
+                            printHeading("You don't have any potions");
                             promptEnterKey();
                         }
                     }
+                }else {
+                    printHeading("You don't have any potions");
+                    promptEnterKey();
                 }
+
             }
             else if(input == 3){
                 clearConsole();

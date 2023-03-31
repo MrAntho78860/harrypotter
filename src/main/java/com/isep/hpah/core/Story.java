@@ -9,22 +9,7 @@ public class Story {
     static Wizard wizard;
     static Spell spell;
 
-    public static void spider() {
-        System.out.println("              (");
-        System.out.println("               )");
-        System.out.println("              (");
-        System.out.println("        /\\  .-\"\"\"-.  /\\");
-        System.out.println("       //\\\\\\/  ,,,  \\\\/\\\\");
-        System.out.println("       |/\\| ,;;;;;, |/\\|");
-        System.out.println("       //\\\\\\\\;-\"\"\"-;///\\\\");
-        System.out.println("      //  \\\\/   .   \\\\/  \\\\");
-        System.out.println("     (| ,-_| \\ | / |_-, |)");
-        System.out.println("       //`__\\.-.-./__`\\\\");
-        System.out.println("      // /.-(() ())-.\\ \\\\");
-        System.out.println("     (\\ |)   '---'   (| /)");
-        System.out.println("      ` (|           |) `");
-        System.out.println("        \\)           (/");
-    }
+
 
     public static void printIntro() {
         //print title screen
@@ -60,8 +45,7 @@ public class Story {
 
         System.out.println("                                                           HARRY POTTER AT HOME"
                 + "\n                                               " +
-                " A game created and designed by Anthony Amar");
-        Game.promptEnterKey();
+                " A game created and designed by Anthony Amar");Game.promptEnterKey();
         Game.clearConsole();
         System.out.println("               _____");
         System.out.println("              /     \\");
@@ -81,6 +65,11 @@ public class Story {
         System.out.println("               /\\ \\ \\");
         System.out.println("              ^^^^ ^^^");
 
+        Potion.rndPotion();
+        Potion.rndPotion();
+        Potion.rndPotion();
+        Potion.rndPotion();
+        Potion.rndPotion();
 
         Game.textDelay("Welcome to the enchanting world of Harry Potter!");
         Game.textDelay("As a young wizard, you've been granted a once-in-a-lifetime opportunity to attend Hogwarts School of Witchcraft and Wizardry.");
@@ -192,15 +181,32 @@ public class Story {
         Game.printSeperator(1);
 
 
-        Game.battle(new AbstractEnemy("acromantula", 60,60 , 70, 20, 0), wizard );
+        Game.battle(new AbstractEnemy("Acromantula", 60,60 , 60, 15, 0), wizard );
         Game.printMenu();
+        Game.skiplines();
+        System.out.println("As you emerge victorious from your battle against the fearsome 'Snake' and the deadly 'Acromantula', your quest leads you deeper into the dark and foreboding dungeons.");
+        System.out.println("Suddenly, you hear a loud thud echoing from the end of the corridor, and you instinctively take cover behind a nearby pillar.");
+        System.out.println("As you pick around the corner, you catch a glimpse of the massive 'Troll' lumbering towards you. You steel yourself for the fight of your life as you enter the 'Dungeon Bathrooms'.");
+        System.out.println("Ready to face the Level 1 Boss and prove your worth as a true hero.");
         Game.promptEnterKey();
         Game.battle(new AbstractEnemy("Troll", 5,5, 50 , 0 , 0), wizard );
         Game.boss += 1;
         Game.printMenu();
+        Game.skiplines();
         Game.promptEnterKey();
+        Spell Accio = new Spell(50, 50, "Accio", 0, "attack");
+        Game.textDelay("You acquire your initial incantation, " + Spell.getName(Accio) + " in the lecture hall.");
+        Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(Accio)+ "  dmg        " + Spell.getAccuracy(Accio)+ "  Acc        " + Spell.getResistance(Accio)+ "  Res      " + Spell.getType(Accio)+ "  Type" );
+        Game.promptEnterKey();
+        Game.battle(new AbstractEnemy("Cerberus", 50, 50, 25, 50, 15), wizard);
         //Game.textDelay("the deceased " + Game.enemyNames[AbstractEnemy.enemy] + " is lying on the ground in front of you.");
-
+        Game.battle(new AbstractEnemy("Snake",40,40,60,10,0), wizard );
+        Game.printMenu();
+        Game.promptEnterKey();
+        Game.battle(new AbstractEnemy("Basilisk", 100, 100, 50 , 20 , 0) ,wizard);
+        Game.printMenu();
+        Game.battle(new AbstractEnemy("Aragog", 70,70 , 20, 30, 10), wizard );
+        Game.printMenu();
     }
 }
 
