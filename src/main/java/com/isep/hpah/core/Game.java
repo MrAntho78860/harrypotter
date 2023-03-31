@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 
 public class Game {
+    public static boolean isRunning;
     static String name;
-    static Wizard wizard;
     static String pet;
 
     static int enemycount = 0;
@@ -188,7 +188,7 @@ public class Game {
     }
 
 
-    //private static void checkAct() {
+    // private static void checkAct() {
     //}
 
     public static void characterInfo() {
@@ -199,7 +199,8 @@ public class Game {
         System.out.println("House : " + Sorting_Hat.getHouse());
         System.out.println("Pet : " + pet);
         System.out.println("Wand type : " + Wand.core + "     Size : " + Wand.getSize() + " cm");
-        System.out.println("Enemies killed : " + enemycount);;
+        System.out.println("Enemies killed : " + enemycount);
+        ;
         System.out.println("Known-spells : " + Arrays.toString(AbstractSpell.spells));
         System.out.println("Potions : " + Arrays.toString(Potion.potions));
         System.out.println(" ");
@@ -247,6 +248,9 @@ public class Game {
             if (input == 1) {
                 //start the game
                 continueJourney();
+                if (wizard.lifePoint <= 0) {
+                    return;
+                }
             } else if (input == 2) {
                 characterInfo();
                 //exit the game
@@ -262,36 +266,34 @@ public class Game {
     public static String[] enemyNames = {"Dementor", "Basilisk", "Death Eater", "Voldemort", "Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort", "Cerberus", "Werewolf",};
 
 
-
-
     //method to start a battle
-    public static void battle(AbstractEnemy enemy, Wizard wizard){
+    public static void battle(AbstractEnemy enemy, Wizard wizard) {
         //start battle
-        while(true){
+        while (true) {
 
             clearConsole();
-            printHeading("Place : " + places[boss] +" | "+" Enemy Kills : " + enemycount  );
+            printHeading("Place : " + places[boss] + " | " + " Enemy Kills : " + enemycount);
             Drawings.Battledraw(enemy);
             printHeading(enemy.getName() + " HP: " + enemy.getLifePoint() + "/" + enemy.getMaxlifePoint());
-            printHeading( name + " HP: " + wizard.lifePoint+ "/" + wizard.maxLifePoint);
+            printHeading(name + " HP: " + wizard.lifePoint + "/" + wizard.maxLifePoint);
             System.out.println("Choose an action: ");
             printSeperator(1);
             System.out.println("(1) Attack \n(2) Potions \n(3) Run");
             int input = readInt("->", 3);
             //react according to the input
-            if (input == 1){
+            if (input == 1) {
                 System.out.println();
                 //Fight
                 //calculating the damage and damage reduction
                 int dmg = wizard.attack() - enemy.defend();
                 int dmgTook = enemy.attack() - wizard.defend();
                 //check if the damage is negative
-                if(dmg < 0){
+                if (dmg < 0) {
                     //add some damage if player defends well
-                    dmg -= dmgTook/2;
+                    dmg -= dmgTook / 2;
                     dmgTook = 0;
                 }
-                if(dmg < 0)
+                if (dmg < 0)
                     //set damage to 0 if it is negative
                     dmg = 0;
                 //deal dmg to both parties
@@ -305,11 +307,11 @@ public class Game {
                 printHeading(enemy.getName() + " attacked you for " + dmgTook + " damage!");
                 promptEnterKey();
                 //check if battle is over
-                if(wizard.lifePoint <= 0){
+                if (wizard.lifePoint <= 0) {
                     //player lost
                     //wizardDied();
                     break;
-                }else if(enemy.lifePoint <= 0){
+                } else if (enemy.lifePoint <= 0) {
                     //player won
                     enemycount += 1;
                     clearConsole();
@@ -333,7 +335,7 @@ public class Game {
                     promptEnterKey();
                     break;
                 }
-            }else if(input == 2) {
+            } else if (input == 2) {
                 //use potion
                 clearConsole();
 
@@ -360,20 +362,19 @@ public class Game {
                     promptEnterKey();
                 }
 
-            }
-            else if(input == 3){
+            } else if (input == 3) {
                 clearConsole();
                 //Chance of escape = 50%
-                if(Math.random()*10 + 1 <= 5){
+                if (Math.random() * 10 + 1 <= 5) {
                     printHeading("You ran away from " + enemy.getName() + "!");
                     promptEnterKey();
                     break;
-                }else{
+                } else {
                     printHeading("You couldn't escape from " + enemy.getName() + "!");
                     int dmgTook = enemy.attack();
                     System.out.println("You took " + dmgTook + " damage!");
                     promptEnterKey();
-                    if(wizard.lifePoint <= 0) {
+                    if (wizard.lifePoint <= 0) {
                         //player lost
                         //wizardDied();
                         break;
