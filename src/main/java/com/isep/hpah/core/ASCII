@@ -88,21 +88,106 @@
 
 
 
+
+
+
+//LEVEL 1 to 7
+System.out.println(" _      ________      ________ _        ___  ");
+System.out.println("| |    |  ____\\ \\    / /  ____| |      |__ \\ ");
+System.out.println("| |    | |__   \\ \\  / /| |__  | |         ) |");
+System.out.println("| |    |  __|   \\ \\/ / |  __| | |        / / ");
+System.out.println("| |____| |____   \\  /  | |____| |____   / /_ ");
+System.out.println("|______|______|   \\/   |______|______| |____|");
+
+
+System.out.println(" _      ________      ________ _        ____  ");
+System.out.println("| |    |  ____\\ \\    / /  ____| |      |___ \\ ");
+System.out.println("| |    | |__   \\ \\  / /| |__  | |        __) |");
+System.out.println("| |    |  __|   \\ \\/ / |  __| | |       |__ < ");
+System.out.println("| |____| |____   \\  /  | |____| |____   ___) |");
+System.out.println("|______|______|   \\/   |______|______| |____/ ");
+
+
+
+System.out.println(" _      ________      ________ _        _  _   ");
+System.out.println("| |    |  ____\\ \\    / /  ____| |      | || |  ");
+System.out.println("| |    | |__   \\ \\  / /| |__  | |      | || |_|");
+System.out.println("| |    |  __|   \\ \\/ / |  __| | |      |__   _|");
+System.out.println("| |____| |____   \\  /  | |____| |____     | |  ");
+System.out.println("|______|______|   \\/   |______|______|    |_|  ");
+
+
+
+System.out.println(" _      ________      ________ _        _____ ");
+System.out.println("| |    |  ____\\ \\    / /  ____| |      | ____|");
+System.out.println("| |    | |__   \\ \\  / /| |__  | |      | |__  ");
+System.out.println("| |    |  __|   \\ \\/ / |  __| | |      |___ \\ ");
+System.out.println("| |____| |____   \\  /  | |____| |____   ___) |");
+System.out.println("|______|______|   \\/   |______|______| |____/ ");
+
+
+
+System.out.println(" _      _____ _   _ _____ _        ____ ");
+System.out.println("| |    |  ___| | | |  ___| |      / ___|");
+System.out.println("| |    | |__ | | | | |__ | |     / /___ ");
+System.out.println("| |    |  __|| | | |  __|| |     | ___ \\");
+System.out.println("| |____| |___\\ \\_/ / |___| |____ | \\_/ |");
+System.out.println("\\_____/\\____/ \\___/\\____/\\_____/ \\____/ ");
+
+
+
+System.out.println(" _      ________      ________ _        ______ ");
+System.out.println("| |    |  ____\\ \\    / /  ____| |      |____  |");
+System.out.println("| |    | |__   \\ \\  / /| |__  | |          / / ");
+System.out.println("| |    |  __|   \\ \\/ / |  __| | |         / /  ");
+System.out.println("| |____| |____   \\  /  | |____| |____    / /   ");
+System.out.println("|______|______|   \\/   |______|______|  /_/    ");
+
+
+
+
+        System.out.println(" __      __ ____   _       _____   ______  __  __   ____   _____  _______             _____   ______  _______  ______  _____    _____   ______  _______  _______  _____  _____  _____   ______ __          __");
+        System.out.println(" \\ \\    / // __ \\ | |     |  __ \\ |  ____||  \\/  | / __ \\ |  __ \\|__   __|   ___     |  __ \\ |  ____||__   __||  ____||  __ \\  |  __ \\ |  ____||__   __||__   __||_   _|/ ____||  __ \\ |  ____|\\ \\        / / ");
+        System.out.println("  \\ \\  / /| |  | || |     | |  | || |__   | \\  / || |  | || |__) |  | |     ( _ )    | |__) || |__      | |   | |__   | |__) | | |__) || |__      | |      | |     | | | |  __ | |__) || |__    \\ \\  /\\  / /  ");
+        System.out.println("   \\/ / | |  | || |     | |  | ||  __|  | |\\/| || |  | ||  _  /   | |     / _ \\/\\  |  ___/ |  __|     | |   |  __|  |  _  /  |  ___/ |  __|     | |      | |     | | | | |_ ||  _  / |  __|    \\/  \\/ /   ");
+        System.out.println("    \\  /  | |__| || |____ | |__| || |____ | |  | || |__| || | \\ \\   | |    | (_>  <  | |     | |____    | |   | |____ | | \\ \\  | |     | |____    | |      | |    _| |_| |__| || | \\ \\ | |____    \\  /\\  /    ");
+        System.out.println("     \\/    \\____/ |______||_____/ |______||_|  |_| \\____/ |_|  \\_\\  |_|     \\___/\\/  |_|     |______|   |_|   |______||_|  \\_\\ |_|     |______|   |_|      |_|   |_____\\____/ |_|  \\_\\|______|    \\/  \\/     ");
+
+
+//THE END
+
+System.out.println(" _______  _    _  ______    ______  _   _  _____   ");
+System.out.println(" |__   __|| |  | ||  ____|  |  ____|| \\ | ||  __ \\  ");
+System.out.println("    | |   | |__| || |__     | |__   |  \\| || |  | | ");
+System.out.println("    | |   |  __  ||  __|    |  __|  | . ` || |  | | ");
+System.out.println("    | |   | |  | || |____   | |____ | |\\  || |__| | ");
+System.out.println("    |_|   |_|  |_||______|  |______||_| \\_||_____/  ");
+
+
+
+
+
+
+
+
+
+
+
 // Intro Boss 1 Troll
-System.out.println("As you emerge victorious from your battle against the fearsome 'Snake' and the deadly 'Acromantula', your quest leads you deeper into the dark and foreboding dungeons.")
-System.out.println("Suddenly, you hear a loud thud echoing from the end of the corridor, and you instinctively take cover behind a nearby pillar.")
-System.out.println("As you pick around the corner, you catch a glimpse of the massive 'Troll' lumbering towards you. You steel yourself for the fight of your life as you enter the 'Dungeon Bathrooms'.")
-System.out.println("Ready to face the Level 1 Boss and prove your worth as a true hero.")
+System.out.println("As you emerge victorious from your battle against the fearsome 'Snake' and the deadly 'Acromantula', your quest leads you deeper into the dark and foreboding dungeons.");
+System.out.println("Suddenly, you hear a loud thud echoing from the end of the corridor, and you instinctively take cover behind a nearby pillar.");
+System.out.println("As you pick around the corner, you catch a glimpse of the massive 'Troll' lumbering towards you. You steel yourself for the fight of your life as you enter the 'Dungeon Bathrooms'.");
+System.out.println("Ready to face the Level 1 Boss and prove your worth as a true hero.");
 
 //Troll's Battle
-"With your wand at the ready, you begin to cast 'Wingardium Leviosa',"
-"lifting nearby objects into the air and directing them towards the Troll's head."
+"With your wand at the ready, you begin to cast 'Wingardium Leviosa',");
+"lifting nearby objects into the air and directing them towards the Troll's head.");
 
 //Victory against the Troll
-System.out.println("After a grueling battle, you emerge victorious over the mighty 'Troll', its massive form lying motionless on the cold stone floor of the 'Dungeon Bathrooms'.")
-System.out.println("As you catch your breath and take in your surroundings, you notice a small glimmer in the corner of the room. You cautiously approach and discover a treasure chest, its contents glinting in the dim light.")
-System.out.println("With a sense of satisfaction, you open the chest and claim your reward for defeating the Level 1 Boss.")
-System.out.println("You know that your journey has only just begun, but with your skill and bravery tested and proven, you are ready to face whatever challenges lie ahead.")
+System.out.println("After a grueling battle, you emerge victorious over the mighty 'Troll', its massive form lying motionless on the cold stone floor of the 'Dungeon Bathrooms'.");
+System.out.println("As you catch your breath and take in your surroundings, you notice a small glimmer in the corner of the room. You cautiously approach and discover a treasure chest, its contents glinting in the dim light.");
+System.out.println("With a sense of satisfaction, you open the chest and claim your reward for defeating the Level 1 Boss.");
+System.out.println("You know that your journey has only just begun, but with your skill and bravery tested and proven, you are ready to face whatever challenges lie ahead.");
 
 "You defeated the Troll"
 "You found [7-15] coins"
@@ -112,105 +197,110 @@ System.out.println("You know that your journey has only just begun, but with you
 
 
 // Intro Boss 2 Basilisk
-"You cautiously make your way through the dark and musty corridors of Hogwarts, your heart racing with anticipation and fear.
-Your quest has led you to the infamous 'Chamber of Secrets', where an ancient and deadly creature lies in wait.
-You can hear the sound of its slithering body moving through the shadows, and you grip your wand tightly, preparing for the fight of your life.
-As you enter the chamber, you catch a glimpse of the creature's glowing eyes and razor-sharp fangs, and you know that this will be a battle like no other.
-With your courage and magic as your only weapons, you step forward to face the fearsome 'Basilisk', determined to emerge victorious and save the school from its deadly grasp."
+System.out.println("You cautiously make your way through the dark and musty corridors of Hogwarts, your heart racing with anticipation and fear.");
+System.out.println("Your quest has led you to the infamous 'Chamber of Secrets', where an ancient and deadly creature lies in wait.");
+System.out.println("You can hear the sound of its slithering body moving through the shadows, and you grip your wand tightly, preparing for the fight of your life.");
+System.out.println("As you enter the chamber, you catch a glimpse of the creature's glowing eyes and razor-sharp fangs, and you know that this will be a battle like no other.");
+System.out.println("With your courage and magic as your only weapons, you step forward to face the fearsome 'Basilisk', determined to emerge victorious and save the school from its deadly grasp.");
 
 // Gryffindor fight against Basilisk if the player demand to use the Sword
-"The Gryffindor wizard reached for the Sword of Gryffindor, which had appeared at his feet.
-With a fierce determination, he raised the sword high above his head and delivered a swift blow to the deadly 'Basilisk', vanquishing the creature once and for all."
+System.out.println("The Gryffindor wizard reached for the Sword of Gryffindor, which had appeared at his feet.");
+System.out.println("With a fierce determination, he raised the sword high above his head and delivered a swift blow to the deadly 'Basilisk', vanquishing the creature once and for all."");
 
 // Other House fight against Basilisk and Victory
-As you stand face to face with the menacing 'Basilisk', you focus your mind and call forth the power of the 'Accio' spell.
-With a swift wave of your wand, you seize one of the creature's deadly fangs and plunge it deep into the cursed 'Tom Riddle's Diary', destroying the dark magic within.
-Your victory is hard-won, but you stand tall and proud as the echoes of the battle fade into the distance. Well done, Wizard !
+System.out.println("As you stand face to face with the menacing 'Basilisk', you focus your mind and call forth the power of the 'Accio' spell.
+System.out.println("With a swift wave of your wand, you seize one of the creature's deadly fangs and plunge it deep into the cursed 'Tom Riddle's Diary', destroying the dark magic within.");
+System.out.println("Your victory is hard-won, but you stand tall and proud as the echoes of the battle fade into the distance. Well done, Wizard !");
 
 //Basilisk win
-You attempt to cast the 'NameSpell' spell, but something goes awry.
-Your wand slips from your grasp and the 'Basilisk' turns its deadly gaze upon you.
-In a moment of terror, you feel your body freeze and turn to stone.
-Your quest has come to a sudden and unfortunate end.
+System.out.println("You attempt to cast the 'NameSpell' spell, but something goes awry.");
+System.out.println("Your wand slips from your grasp and the 'Basilisk' turns its deadly gaze upon you.");
+System.out.println("In a moment of terror, you feel your body freeze and turn to stone.");
+System.out.println("Your quest has come to a sudden and unfortunate end.");
 
 
 
 
 
 //Intro Boss 3 Dementors
-You now face the formidable 'Dementors', ready to engage in battle within the murky waters of the Forbidden Forest lake.
-The fight is about to begin.
+System.out.println("You now face the formidable 'Dementors', ready to engage in battle within the murky waters of the Forbidden Forest lake.");
+System.out.println("The fight is about to begin.");
 
 //Win against
-You unleash the power of 'Expecto Patronum', casting a powerful charm that sends the 'Dementors' fleeing in terror.
-The battle is won, and you stand victorious in the face of darkness.
+System.out.println("You unleash the power of 'Expecto Patronum', casting a powerful charm that sends the 'Dementors' fleeing in terror.");
+"The battle is won, and you stand victorious in the face of darkness.");
 
 //Defeat against Dementors
-You attempt to cast 'SpellName', but the power of the 'Dementors' overwhelms you, and you are unable to repel their darkness.
-Your soul is consumed, and you are left stranded in the abyss of your worst memories.
-Your quest has come to a devastating end.
+System.out.println("You attempt to cast 'SpellName', but the power of the 'Dementors' overwhelms you, and you are unable to repel their darkness.");
+System.out.println("Your soul is consumed, and you are left stranded in the abyss of your worst memories.");
+System.out.println("Your quest has come to a devastating end.");
 
 
 
 
 
 //Intro Boss 4 Voldemort & Peter Pettigrew
-You find yourself in the eerie graveyard of Little Hangleton,
-facing the ultimate challenge: the infamous Dark Lord Voldemort and his loyal follower, Peter Pettigrew.
- Your battle begins.
+System.out.println("You find yourself in the eerie graveyard of Little Hangleton,");
+System.out.println("facing the ultimate challenge: the infamous Dark Lord Voldemort and his loyal follower, Peter Pettigrew.");
+System.out.println("Your battle begins.");
 
 //Win against them with the Accio Spell
-With all your might, you cast the Accio spell to draw the Portkey closer to you.
-Voldemort and Pettigrew are closing in, but you manage to grab the Portkey and escape just in time.
-Victory is yours, but the memory of this battle will haunt you forever.
+System.out.println("With all your might, you cast the Accio spell to draw the Portkey closer to you.");
+System.out.println("Voldemort and Pettigrew are closing in, but you manage to grab the Portkey and escape just in time.");
+System.out.println("Victory is yours, but the memory of this battle will haunt you forever.");
 
 //Win but without Accio Spell
-With a quick incantation, you manage to stun Voldemort and Pettigrew, giving you just enough time to escape.
-You run as fast as you can, grateful for the chance to fight another day.
+System.out.println("With a quick incantation, you manage to stun Voldemort and Pettigrew, giving you just enough time to escape.");
+System.out.println("You run as fast as you can, grateful for the chance to fight another day.");
 
 //Defeat against them
-You fought bravely, but unfortunately, Voldemort and Pettigrew were too powerful.
-They overcame your spells and defeated you in battle.
-As you lay defeated, you wonder if there will ever be another chance to stop their reign of terror.
+System.out.println("You fought bravely, but unfortunately, Voldemort and Pettigrew were too powerful.");
+System.out.println("They overcame your spells and defeated you in battle.");
+System.out.println("As you lay defeated, you wonder if there will ever be another chance to stop their reign of terror.");
 
 
 
 
 
 //Intro Boss 5 Dolores Umbridge
-You enter the Examination Room at Hogwarts to face your final challenge against the tyrannical Dolores Umbridge.
-The tension is palpable as the battle is about to begin.
+System.out.println("You enter the Examination Room at Hogwarts to face your final challenge against the tyrannical Dolores Umbridge.");
+System.out.println("The tension is palpable as the battle is about to begin.");
 
 //Victory
-With a burst of spells, Dolores Umbridge was defeated.
-The wizard used every trick in their arsenal, from stunning spells to disarming charms, until Umbridge was left disarmed and disoriented.
-The students in the room erupted in cheers, and the wizard cast a few more spells to set off fireworks, lighting up the room with a colorful celebration.
+System.out.println("With a burst of spells, Dolores Umbridge was defeated.
+System.out.println("The wizard used every trick in their arsenal, from stunning spells to disarming charms, until Umbridge was left disarmed and disoriented.");
+System.out.println("The students in the room erupted in cheers, and the wizard cast a few more spells to set off fireworks, lighting up the room with a colorful celebration.");
 
 //defeat
-"Despite your attempts to fight Dolores Umbridge, she overpowers you and emerges victorious.
-You feel defeated and helpless as she stands over you."
+System.out.println("Despite your attempts to fight Dolores Umbridge, she overpowers you and emerges victorious.");
+System.out.println("You feel defeated and helpless as she stands over you.");
 
 
 
 
 
 //Intro Boss 6 DeathEater
-As you climb the winding stairs of the Astronomy Tower, you hear the faint echoes of laughter and whispers growing louder with each step.
-At the top, you find yourself face to face with a group of menacing Death Eaters, their wands at the ready.
-The battle begins.
+System.out.println("As you climb the winding stairs of the Astronomy Tower, you hear the faint echoes of laughter and whispers growing louder with each step.");
+System.out.println("At the top, you find yourself face to face with a group of menacing Death Eaters, their wands at the ready.");
+System.out.println("The battle begins.");
 
 //Join the DeathEater
-As a proud member of Slytherin, you decide to team up with the Death Eaters.
-Together, you fight valiantly and emerge victorious, securing your place among the elite wizards.
-GAME FINISH VICTORY
+System.out.println("As a proud member of Slytherin, you decide to team up with the Death Eaters.");
+System.out.println("Together, you fight valiantly and emerge victorious, securing your place among the elite wizards.");
+System.out.println(" _______  _    _  ______    ______  _   _  _____   ");
+System.out.println(" |__   __|| |  | ||  ____|  |  ____|| \\ | ||  __ \\  ");
+System.out.println("    | |   | |__| || |__     | |__   |  \\| || |  | | ");
+System.out.println("    | |   |  __  ||  __|    |  __|  | . ` || |  | | ");
+System.out.println("    | |   | |  | || |____   | |____ | |\\  || |__| | ");
+System.out.println("    |_|   |_|  |_||______|  |______||_| \\_||_____/  ");
 
 //Sectumsempra
- You bravely use the powerful Sectumsempra spell, causing deep wounds to your enemies.
- With quick reflexes and strategic thinking, you defeat the Death Eaters and progress to the final level.
+ System.out.println("You bravely use the powerful Sectumsempra spell, causing deep wounds to your enemies.");
+ System.out.println("With quick reflexes and strategic thinking, you defeat the Death Eaters and progress to the final level.");
 
  //Victory with spells
- Using your arsenal of spells and skills, you engage in an intense battle with the Death Eaters in the Astronomy Tower.
- Your tenacity and determination pay off as you emerge victorious, earning your place among the elite wizards in the final level.
+ System.out.println("Using your arsenal of spells and skills, you engage in an intense battle with the Death Eaters in the Astronomy Tower.");
+ System.out.println("Your tenacity and determination pay off as you emerge victorious, earning your place among the elite wizards in the final level.");
 
 
 
@@ -219,39 +309,39 @@ GAME FINISH VICTORY
 
 
  //Intro Boss 7 Voldemort et Bellatrix Lestrange
- The final battle against the ultimate evil has arrived.
- The fate of the wizarding world rests on your shoulders as you stand face to face with the Dark Lord himself, Voldemort, and his most loyal follower, Bellatrix Lestrange.
- The tension is palpable as you draw your wand and prepare to give it your all.
- It's time to show them what a true wizard is made of.
- Are you ready to face your destiny and save the wizarding world once and for all ?
+ System.out.println("The final battle against the ultimate evil has arrived.");
+ System.out.println("The fate of the wizarding world rests on your shoulders as you stand face to face with the Dark Lord himself, Voldemort, and his most loyal follower, Bellatrix Lestrange.");
+ System.out.println("The tension is palpable as you draw your wand and prepare to give it your all.");
+ System.out.println("It's time to show them what a true wizard is made of.");
+ System.out.println("Are you ready to face your destiny and save the wizarding world once and for all ?");
 
 
 
  //Wizard Victory
 
-The wizard, armed with courage and determination, is about to face the two most formidable foes of the wizarding world.
-They must act with caution and speed, for the slightest mistake can be fatal.
-Spells come from all sides, but the wizard avoids them with ease.
-They respond with a series of well-placed spells that incapacitate Bellatrix Lestrange and Voldemort.
-The sorcerer managed to avoid the Avada Kedavra and defeat Hogwarts' two greatest enemies.
+System.out.println("The wizard, armed with courage and determination, is about to face the two most formidable foes of the wizarding world.");
+System.out.println("They must act with caution and speed, for the slightest mistake can be fatal.");
+System.out.println("Spells come from all sides, but the wizard avoids them with ease.");
+System.out.println("They respond with a series of well-placed spells that incapacitate Bellatrix Lestrange and Voldemort.");
+System.out.println("The sorcerer managed to avoid the Avada Kedavra and defeat Hogwarts' two greatest enemies.");
 
 
 //Wizard Defeat
-The wizard fought valiantly against Voldemort and Bellatrix Lestrange, but unfortunately, he was not able to defeat them.
-Despite his best efforts, he was unable to avoid the Avada Kedavra and perished in battle.
-The wizarding world mourned his loss, and Hogwarts would never forget his bravery in the face of evil.
-Although he did not succeed in his mission, his name would forever be etched in the history of the wizarding world as a hero who fought until his last breath.
+System.out.println("The wizard fought valiantly against Voldemort and Bellatrix Lestrange, but unfortunately, he was not able to defeat them.");
+System.out.println("Despite his best efforts, he was unable to avoid the Avada Kedavra and perished in battle.");
+System.out.println("The wizarding world mourned his loss, and Hogwarts would never forget his bravery in the face of evil.");
+System.out.println("Although he did not succeed in his mission, his name would forever be etched in the history of the wizarding world as a hero who fought until his last breath.");
 
 
 
 
 
 //End
-As the wizard stands victorious over the defeated forms of Bellatrix Lestrange and Voldemort, he feels a surge of triumph and relief.
-He had faced his greatest challenge and emerged victorious, thanks to his courage, quick reflexes, and mastery of spells.
-The wizard's name will forever be remembered as the hero who saved the wizarding world from the darkness of the Dark Lord.
+System.out.println("As the wizard stands victorious over the defeated forms of Bellatrix Lestrange and Voldemort, he feels a surge of triumph and relief.");
+System.out.println("He had faced his greatest challenge and emerged victorious, thanks to his courage, quick reflexes, and mastery of spells.");
+System.out.println("The wizard's name will forever be remembered as the hero who saved the wizarding world from the darkness of the Dark Lord.");
 
-As he walks out of the ruins of Hogwarts, the wizard is greeted by cheers and applause from his fellow students and teachers.
-He is hailed as a champion, a savior, and a true wizard in every sense of the word.
-The wizard knows that his journey is far from over, but for now, he revels in the glory of his triumph and the knowledge that he has brought hope and light to a world once shrouded in darkness.
+System.out.println("As he walks out of the ruins of Hogwarts, the wizard is greeted by cheers and applause from his fellow students and teachers.");
+System.out.println("He is hailed as a champion, a savior, and a true wizard in every sense of the word.");
+System.out.println("The wizard knows that his journey is far from over, but for now, he revels in the glory of his triumph and the knowledge that he has brought hope and light to a world once shrouded in darkness.");
 

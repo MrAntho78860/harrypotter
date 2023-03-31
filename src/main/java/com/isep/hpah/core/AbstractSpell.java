@@ -55,7 +55,7 @@ public class AbstractSpell {
         } else if (spells[input - 1] == "Accio") {
             spell = new Spell(50, 50, "Accio", 0, "attack");
         } else if (spells[input - 1] == "Expecto Patronum") {
-            spell = new Spell(100, damage = 10, "Expecto Patronum", resistance = 10, type = "defense");
+            spell = new Spell(100, damage = 10, "Patronum", resistance = 10, type = "defense");
         } else if (spells[input - 1] == "Stupefy") {
             spell = new Spell(100, damage = 30, "Stupefy", resistance = 0, type = "attack");
         } else if (spells[input - 1] == "Sectumsempra") {
@@ -63,7 +63,7 @@ public class AbstractSpell {
          } else if (spells[input - 1] =="Expelliarmus") {
             spell = new Spell(100, damage = 40, "Expelliarmus", resistance = 0, type = "attack");
         } else if (spells[input - 1] =="Avada Kedavra") {
-            spell = new Spell(100, damage = 40, "Avada Kedavra", resistance = 0, type = "attack");
+            spell = new Spell(100, damage = 40, "AvadaKedavra", resistance = 0, type = "attack");
 
     }
 
