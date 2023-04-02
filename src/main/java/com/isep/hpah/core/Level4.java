@@ -4,8 +4,8 @@ public class Level4 {
     static Wizard wizard;
 
     public static void Level4() {
+        wizard = new Wizard(Game.name, 200, 200);
         Game.clearConsole();
-
         System.out.println(" _      ________      ________ _        _  _   ");
         System.out.println("| |    |  ____\\ \\    / /  ____| |      | || |  ");
         System.out.println("| |    | |__   \\ \\  / /| |__  | |      | || |_|");
@@ -15,6 +15,10 @@ public class Level4 {
         Game.promptEnterKey();
         Game.skiplines();
         Game.promptEnterKey();
+        Game.printSeperator(1);
+        System.out.println("One year later");
+        Game.printSeperator(1);
+        Game.delay(1500);
         Spell Stupefy= new Spell(100,  10, "Stupefy",  10,  "defense");
         Game.textDelay("You acquire your initial incantation, " + Spell.getName(Stupefy) + " in the lecture hall.");
         Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(Stupefy)+ "  dmg        " + Spell.getAccuracy(Stupefy)+ "  Acc        " + Spell.getResistance(Stupefy)+ "  Res      " + Spell.getType(Stupefy)+ "  Type" );

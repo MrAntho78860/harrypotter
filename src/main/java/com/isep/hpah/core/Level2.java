@@ -1,15 +1,17 @@
 package com.isep.hpah.core;
+
+import java.sql.SQLOutput;
+
 import static com.isep.hpah.core.Story.wizard;
+
 public class Level2 {
 
     static Wizard wizard;
 
     public static void Level2() {
 
-        wizard =new
-
-        Wizard(Game.name, 200,200);
-    Game.clearConsole();
+        wizard = new Wizard(Game.name, 200, 200);
+        Game.clearConsole();
         System.out.println(" _      ________      ________ _        ___  ");
         System.out.println("| |    |  ____\\ \\    / /  ____| |      |__ \\ ");
         System.out.println("| |    | |__   \\ \\  / /| |__  | |         ) |");
@@ -19,13 +21,22 @@ public class Level2 {
         Game.promptEnterKey();
         Game.skiplines();
         Game.promptEnterKey();
+        Game.printSeperator(1);
+        System.out.println("One year later");
+        Game.printSeperator(1);
+        Game.delay(1500);
+
         Spell Accio = new Spell(50, 50, "Accio", 0, "attack");
-        Game.textDelay("You acquire your initial incantation, "+Spell.getName(Accio)+" in the lecture hall.");
-        Game.textDelay("It' s stats are as follow:    "+Spell.getDamage(Accio)+"  dmg        "+Spell.getAccuracy(Accio)+"  Acc        "+Spell.getResistance(Accio)+"  Res      "+Spell.getType(Accio)+"  Type");
+        Game.textDelay("You acquire your initial incantation, " + Spell.getName(Accio) + " in the lecture hall.");
+        Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(Accio) + "  dmg        " + Spell.getAccuracy(Accio) + "  Acc        " + Spell.getResistance(Accio) + "  Res      " + Spell.getType(Accio) + "  Type");
         Game.promptEnterKey();
         Game.battle(new
 
-        AbstractEnemy("Cerberus",50,50,25,50,15),wizard);
+                AbstractEnemy("Cerberus", 50, 50, 25, 50, 15), wizard);
+        if (wizard.lifePoint <= 0) {
+            System.out.println("Game over. The wizard has been defeated by the enemy.");
+            return;
+        }
         Game.textDelay("AMAZING! That was a close call! You are fortunate to be alive!");
         Game.promptEnterKey();
         Game.printMenu();
@@ -33,7 +44,11 @@ public class Level2 {
         Game.printSeperator(1);
         Game.battle(new
 
-        AbstractEnemy("Snake",40,40,60,10,0),wizard );
+                AbstractEnemy("Snake", 40, 40, 60, 10, 0), wizard);
+        if (wizard.lifePoint <= 0) {
+            System.out.println("Game over. The wizard has been defeated by the enemy.");
+            return;
+        }
         Game.textDelay("AMAZING! That was a close call! You are fortunate to be alive!");
         Game.promptEnterKey();
         Game.printMenu();
@@ -46,9 +61,14 @@ public class Level2 {
         System.out.println("With your courage and magic as your only weapons, you step forward to face the fearsome 'Basilisk', determined to emerge victorious and save the school from its deadly grasp.");
         Game.promptEnterKey();
 
-        Game.battle(new
-
-        AbstractEnemy("Basilisk",100,100,50,20,0) ,wizard);
+        Game.battle(new AbstractEnemy("Basilisk", 100, 100, 100, 150, 0), wizard);
+        if (wizard.lifePoint <= 0) {
+            System.out.println("You attempt to cast the 'Accio' spell, but something goes awry.");
+            System.out.println("Your wand slips from your grasp and the 'Basilisk' turns its deadly gaze upon you.");
+            System.out.println("In a moment of terror, you feel your body freeze and turn to stone.");
+            System.out.println("Your quest has come to a sudden and unfortunate end.");
+            return;
+        }
         Game.printMenu();
     }
 }

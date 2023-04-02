@@ -161,6 +161,60 @@ public class Drawings {
                         System.out.println("           J#?                                                                                 7#!");
                         System.out.println("           PB:                                                                                ^P^");
                         System.out.println("           PY                                                                                 :.");
+                }else if (enemy.getName() == "Werewolf"){
+                        System.out.println("                           __");
+                        System.out.println("                            .d$$b");
+                        System.out.println("                          .' TO$;");
+                        System.out.println("                         /  : TP._;");
+                        System.out.println("                        / _.;  :Tb|");
+                        System.out.println("                       /   /   ;j$j");
+                        System.out.println("                   _.-\"       d$$$$");
+                        System.out.println("                 .' ..       d$$$$;");
+                        System.out.println("                /  /P'      d$$$$P. |\\");
+                        System.out.println("               /   \"      .d$$$P' |\\^\"l");
+                        System.out.println("             .'           `T$P^\"\"\"\"\"  :");
+                        System.out.println("         ._.'      _.'                ;");
+                        System.out.println("      `-.-\"-.-' ._.       _.-\"    .-\"");
+                        System.out.println("    `.-\" _____  ._              .-\"");
+                        System.out.println("   -(.g$$$$$$$b.              .'");
+                        System.out.println("     \"\"^^T$$$P^)            .(:");
+                        System.out.println("       _/  -\"  /.'         /:/;");
+                        System.out.println("    ._.'-'`-'  \")/         /;/;");
+                        System.out.println(" `-.-\"..--\"\"   \" /         /  ;");
+                        System.out.println(".-\" ..--\"\"        -'          :");
+                        System.out.println("..--\"\"--.-\"         (\\      .-(\\");
+                        System.out.println("  ..--\"\"              `-\\(\\/;`");
+                        System.out.println("    _.                      :");
+                        System.out.println("                            ;`-");
+                        System.out.println("                           :\\");
+                }else if (enemy.getName() == "Dragon"){
+                        System.out.println("             __                  __");
+                        System.out.println("            ( _)                ( _)");
+                        System.out.println("           / / \\              / /\\_\\_");
+                        System.out.println("          / /   \\\\            / / | \\ \\");
+                        System.out.println("         / /     \\\\          / /  |\\ \\ \\");
+                        System.out.println("        /  /   ,  \\ ,       / /   /|  \\ \\");
+                        System.out.println("       /  /    |\\_ /|      / /   / \\   \\_\\");
+                        System.out.println("      /  /  |\\/ _ '_| \\   / /   /   \\    \\\\");
+                        System.out.println("     |  /   |/  0 \\0\\    / |    |    \\    \\\\");
+                        System.out.println("     |    |\\|      \\\\_\\_ /  /    |     \\    \\\\");
+                        System.out.println("     |  | |/    \\.\\ o\\o)  /      \\     |    \\\\");
+                        System.out.println("     \\    |     /\\\\`v-v  /        |    |     \\\\");
+                        System.out.println("      | \\/    /_| \\\\_|  /         |    | \\    \\\\");
+                        System.out.println("      | |    /__/\\_\\`-` /   _____  |    |  \\    \\\\");
+                        System.out.println("      \\|    [__]  \\_/  |_________  \\   |   \\    ()");
+                        System.out.println("       /    [___] (    \\         \\  |\\ |   |   //");
+                        System.out.println("      |    [___]                  |\\| \\|   /  |/ ");
+                        System.out.println("     /|    [____]                  \\  |/\\ / / ||");
+                        System.out.println("snd (  \\   [____ /     ) _\\      \\  \\    \\| | ||");
+                        System.out.println("     \\  \\  [_____|    / /     __/    \\   / / //");
+                        System.out.println("     |   \\ [_____/   / /        \\    |   \\/ //");
+                        System.out.println("     |   /  '----|   /=\\____   _/    |   / //");
+                        System.out.println("  __ /  /        |  /   ___/  _/\\    \\  | ||");
+                        System.out.println(" (/-(/-\\)       /   \\  (/\\/\\)/  |    /  | /");
+                        System.out.println("               (/\\/\\/)           /   /   //");
+                        System.out.println("                      _________/   /    /");
+                        System.out.println("                     \\____________/    (");
 
                 }
         }

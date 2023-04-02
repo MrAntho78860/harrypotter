@@ -18,5 +18,4 @@ public class Boss {
         this.resistance = resistance;
     }
 
-
 }

@@ -263,7 +263,7 @@ public class Game {
 
 //Enemies name
 
-    public static String[] enemyNames = {"Dementor", "Basilisk", "Death Eater", "Voldemort", "Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort", "Cerberus", "Werewolf",};
+    public static String[] enemyNames = {"Dementor", "Basilisk", "Death Eater", "Voldemort", "Dementor", "Basilisk", "Acromantula", "Death Eater", "Voldemort", "Cerberus", "Werewolf", "Aragog"};
 
 
     //method to start a battle

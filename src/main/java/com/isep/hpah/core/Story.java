@@ -84,7 +84,7 @@ public class Story {
 
         System.out.println("May I have the pleasure of knowing your name?");
         Game.name();
-        wizard = new Wizard(Game.name, 200, 200);
+        wizard = new Wizard(Game.name, 20, 20);
 
         Game.promptEnterKey();
         Game.clearConsole();
@@ -137,9 +137,11 @@ public class Story {
         Game.textDelay("These attacks can happen at any time and anywhere.");
         Game.textDelay("It is advisable to be cautious and vigilant for any signs of danger.");
         Game.promptEnterKey();
-
+        Game.clearConsole();
         Game.printHeading("Later that week");
+        Game.delay(1000);
         Spell WingardiumLeviosa = new Spell(100, 10,"Wingardium Leviosa", 0 , "attack");
+
 
         System.out.println("\t\t                          ,---.");
         System.out.println("\t\t                         /   |");
@@ -167,11 +169,14 @@ public class Story {
         System.out.println("\t\t        \\:: :     /     `     ,   /  |");
         System.out.println("\t\t         || |    (        ,' /   /   |");
         System.out.println("\t\t         ||                ,'   /    |");
-
+        Game.delay(1);
+        Game.printSeperator(1);
         Game.textDelay("You acquire your initial incantation, " + Spell.getName(WingardiumLeviosa) + " in the lecture hall.");
-        Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(WingardiumLeviosa)+ "  dmg        " + Spell.getAccuracy(WingardiumLeviosa)+ "  Acc        " + Spell.getResistance(WingardiumLeviosa)+ "  Res      " + Spell.getType(WingardiumLeviosa)+ "  Type" );
+        Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(WingardiumLeviosa)+ "  dmg        " + Spell.getAccuracy(WingardiumLeviosa)+ "  acc        " + Spell.getResistance(WingardiumLeviosa)+ "  res      " + Spell.getType(WingardiumLeviosa)+ "  Type" );
+        Game.printSeperator(1);
         Game.textDelay("As you traverse the castle, you observe... ");
-
+        Game.printSeperator(1);
+        Game.promptEnterKey();
 
 
 
@@ -180,6 +185,29 @@ public class Story {
             return;
         }
         Level2.Level2();
+        if(wizard.lifePoint <= 0){
+            return;
+        }
+        Level3.Level3();
+        if(wizard.lifePoint <= 0){
+            return;
+        }
+        Level4.Level4();
+        if(wizard.lifePoint <= 0){
+            return;
+        }
+        Level5.Level5();
+        if(wizard.lifePoint <= 0){
+            return;
+        }
+        Level6.Level6();
+        if(wizard.lifePoint <= 0){
+            return;
+        }
+        Level2.Level2();
+        if(wizard.lifePoint <= 0){
+            return;
+        }Level7.Level7();
         if(wizard.lifePoint <= 0){
             return;
         }

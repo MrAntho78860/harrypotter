@@ -5,6 +5,7 @@ public class Level5 {
     static Wizard wizard;
 
     public static void Level5() {
+        wizard = new Wizard(Game.name, 200, 200);
         Game.clearConsole();
         System.out.println(" _      ________      ________ _        _____ ");
         System.out.println("| |    |  ____\\ \\    / /  ____| |      | ____|");
@@ -15,6 +16,10 @@ public class Level5 {
         Game.promptEnterKey();
         Game.skiplines();
         Game.promptEnterKey();
+        Game.printSeperator(1);
+        System.out.println("One year later");
+        Game.printSeperator(1);
+        Game.delay(1500);
         Spell Sectumsempra = new Spell(100, 10, "Sectumsempra", 10, "defense");
         Game.textDelay("You acquire your initial incantation, " + Spell.getName(Sectumsempra) + " in the lecture hall.");
         Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(Sectumsempra) + "  dmg        " + Spell.getAccuracy(Sectumsempra) + "  Acc        " + Spell.getResistance(Sectumsempra) + "  Res      " + Spell.getType(Sectumsempra) + "  Type");

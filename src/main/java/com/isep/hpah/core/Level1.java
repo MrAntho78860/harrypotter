@@ -24,8 +24,6 @@ public class Level1 {
             return;
         }
         Game.textDelay("AMAZING! That was a close call! You are fortunate to be alive!");
-        Potion tempPotion = Potion.rndPotion();
-        Potion.potionsAdd(tempPotion, wizard);
         //System.out.println(tempPotion.getName());
         Game.promptEnterKey();
         Game.printMenu();
@@ -52,14 +50,22 @@ public class Level1 {
         System.out.println("lifting nearby objects into the air and directing them towards the Troll's head.");
         Game.delay(1000);
         Game.promptEnterKey();
-        Game.battle(new AbstractEnemy("Troll", 5, 5, 50, 0, 0), wizard);
+        Game.battle(new AbstractEnemy("Troll", 100,100 , 25, 50, 0), wizard);
         Game.boss += 1;
+        if(wizard.lifePoint <= 0){
+            System.out.println("Game over. The wizard has been defeated by the Troll.");
+            return;
+        }
         System.out.println("After a grueling battle, you emerge victorious over the mighty 'Troll', its massive form lying motionless on the cold stone floor of the 'Dungeon Bathrooms'.");
         System.out.println("As you catch your breath and take in your surroundings, you notice a small glimmer in the corner of the room. You cautiously approach and discover a treasure chest, its contents glinting in the dim light.");
         System.out.println("With a sense of satisfaction, you open the chest and claim your reward for defeating the Level 1 Boss.");
         System.out.println("You know that your journey has only just begun, but with your skill and bravery tested and proven, you are ready to face whatever challenges lie ahead.");
         Game.promptEnterKey();
-        System.out.println();
+        Game.printSeperator(1);
+        Potion tempPotion = Potion.rndPotion();
+        Potion.potionsAdd(tempPotion, wizard);
+        Game.printSeperator(1);
+        Game.promptEnterKey();
         Game.printMenu();
     }
 

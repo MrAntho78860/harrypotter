@@ -5,6 +5,7 @@ public class Level6 {
     static Wizard wizard;
 
     public static void Level6() {
+        wizard = new Wizard(Game.name, 200, 200);
         Game.clearConsole();
         System.out.println(" _      _____ _   _ _____ _        ____ ");
         System.out.println("| |    |  ___| | | |  ___| |      / ___|");
@@ -15,6 +16,10 @@ public class Level6 {
         Game.promptEnterKey();
         Game.skiplines();
         Game.promptEnterKey();
+        Game.printSeperator(1);
+        System.out.println("One year later");
+        Game.printSeperator(1);
+        Game.delay(1500);
         Spell Expelliarmus = new Spell(100, 10, "Expelliarmus", 10, "defense");
         Game.textDelay("You acquire your initial incantation, " + Spell.getName(Expelliarmus) + " in the lecture hall.");
         Game.textDelay("It' s stats are as follow:    " + Spell.getDamage(Expelliarmus) + "  dmg        " + Spell.getAccuracy(Expelliarmus) + "  Acc        " + Spell.getResistance(Expelliarmus) + "  Res      " + Spell.getType(Expelliarmus) + "  Type");
